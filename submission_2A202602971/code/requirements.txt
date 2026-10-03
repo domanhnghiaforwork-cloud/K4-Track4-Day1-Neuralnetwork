@@ -1,0 +1,15 @@
+# Core Deep Learning & Numerical Computing
+torch>=2.0.0
+numpy>=1.24.0
+
+# Data Processing & Machine Learning Utilities
+pandas>=2.0.0
+scikit-learn>=1.2.0
+
+# Visualization & Reporting
+matplotlib>=3.7.0
+openpyxl>=3.1.0
+
+# Interactive Environment & Utilities (Optional / Recommended)
+ipykernel>=6.20.0
+tqdm>=4.65.0
