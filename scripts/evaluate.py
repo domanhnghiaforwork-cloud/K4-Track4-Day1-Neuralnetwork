@@ -26,6 +26,13 @@ import argparse
 import json
 import sys
 
+# Bảo đảm in được tiếng Việt/Unicode trên terminal Windows
+if sys.stdout.encoding and sys.stdout.encoding.lower() != "utf-8":
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
+
 import numpy as np
 import pandas as pd
 

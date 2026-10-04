@@ -231,8 +231,9 @@ def run_experiment(cfg: dict, data: dict, verbose: bool = True) -> dict:
                 with torch.autocast(device_type="cuda", dtype=torch.float16):
                     logits = model(xb)
                     loss = compute_loss(logits, yb, cfg["loss"])
-            elif precision == "bf16" and is_cuda:
-                with torch.autocast(device_type="cuda", dtype=torch.bfloat16):
+            elif precision == "bf16":
+                dev_type = "cuda" if is_cuda else "cpu"
+                with torch.autocast(device_type=dev_type, dtype=torch.bfloat16):
                     logits = model(xb)
                     loss = compute_loss(logits, yb, cfg["loss"])
             else:

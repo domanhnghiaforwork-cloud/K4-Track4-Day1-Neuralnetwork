@@ -1,0 +1,63 @@
+{
+  "cfg": {
+    "exp_id": "amp-bf16",
+    "group": "amp",
+    "description": "Mixed Precision BFloat16",
+    "loss": "ce",
+    "optimizer": "sgd_momentum",
+    "lr": 0.05,
+    "batch": 512,
+    "epochs": 2,
+    "hidden": [
+      256,
+      128
+    ],
+    "dropout": 0.0,
+    "init": "he",
+    "clip_norm": null,
+    "precision": "bf16",
+    "seed": 1
+  },
+  "history": {
+    "epoch": [
+      1,
+      2
+    ],
+    "train_loss": [
+      0.49602436462402344,
+      0.43140779418945313
+    ],
+    "val_loss": [
+      0.4969957810907447,
+      0.4342905587325836
+    ],
+    "val_acc": [
+      0.7851487994194031,
+      0.816753089427948
+    ],
+    "val_macro_f1": [
+      0.6047529208012682,
+      0.6929457055366292
+    ],
+    "grad_norm": [
+      0.5563857752568456,
+      0.6922069758053823
+    ],
+    "epoch_time_s": [
+      90.98400569999649,
+      94.22698560000572
+    ]
+  },
+  "summary": {
+    "step0_loss": 2.2690822573168337,
+    "best_val_loss": 0.4342905587325836,
+    "best_epoch": 2,
+    "final_train_loss": 0.43140779418945313,
+    "final_val_loss": 0.4342905587325836,
+    "val_acc": 0.816753089427948,
+    "val_macro_f1": 0.6929457055366292,
+    "time_per_epoch_s": 92.605,
+    "peak_mem_MB": 0.0,
+    "diverged": false
+  }
+}
