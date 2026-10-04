@@ -1,0 +1,65 @@
+{
+  "cfg": {
+    "exp_id": "test-base-part2",
+    "group": "baseline",
+    "description": "Baseline M-base (2 epochs)",
+    "loss": "ce",
+    "optimizer": "sgd_momentum",
+    "lr": 0.05,
+    "weight_decay": 0.0,
+    "momentum": 0.9,
+    "batch": 512,
+    "epochs": 2,
+    "hidden": [
+      256,
+      128
+    ],
+    "dropout": 0.0,
+    "init": "he",
+    "clip_norm": null,
+    "precision": "fp32",
+    "seed": 1
+  },
+  "history": {
+    "epoch": [
+      1,
+      2
+    ],
+    "train_loss": [
+      0.4951234216308594,
+      0.4280976123046875
+    ],
+    "val_loss": [
+      0.4961260593311145,
+      0.43106778403911006
+    ],
+    "val_acc": [
+      0.7854176759719849,
+      0.8175921440124512
+    ],
+    "val_macro_f1": [
+      0.6037381914851253,
+      0.6940053014612129
+    ],
+    "grad_norm": [
+      0.5567706871106504,
+      0.6961343867250781
+    ],
+    "epoch_time_s": [
+      2.2941805999998905,
+      2.0938035999988642
+    ]
+  },
+  "summary": {
+    "step0_loss": 2.2690822573168337,
+    "best_val_loss": 0.43106778403911006,
+    "best_epoch": 2,
+    "final_train_loss": 0.4280976123046875,
+    "final_val_loss": 0.43106778403911006,
+    "val_acc": 0.8175921440124512,
+    "val_macro_f1": 0.6940053014612129,
+    "time_per_epoch_s": 2.194,
+    "peak_mem_MB": 0.0,
+    "diverged": false
+  }
+}
